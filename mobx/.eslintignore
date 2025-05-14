@@ -1,0 +1,10 @@
+# Artifacts
+dist
+coverage
+
+# Scripts
+scripts
+
+# Configs
+.eslintrc.js
+lint-staged.config.js

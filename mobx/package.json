@@ -1,0 +1,41 @@
+{
+  "name": "@tools/mobx",
+  "version": "1.0.14",
+  "module": "dist/index.js",
+  "jsnext:main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn build:code && yarn build:types",
+    "publish": "yarn npm publish",
+    "build:code": "node scripts/esbuild.mjs",
+    "build:types": "yarn g:tsc --p tsconfig-build.json && yarn g:rollup -c scripts/rollup.config.js",
+    "eslint:fix": "yarn g:eslint:fix",
+    "eslint:check": "yarn g:eslint:check",
+    "prettier:write": "yarn g:prettier:write --ignore-path ../../.prettierignore",
+    "prettier:check": "yarn g:prettier:check --ignore-path ../../.prettierignore",
+    "ts:check": "yarn g:tsc"
+  },
+  "publishConfig": {
+    "registry": "https://git.cryptology.com/api/v4/projects/243/packages/npm/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash-es": "4.17.21",
+    "mobx": "6.6.2",
+    "mobx-react-lite": "3.4.0",
+    "mobx-utils": "6.0.5",
+    "redux": "4.1.0"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "4.17.7"
+  },
+  "peerDependencies": {
+    "@tools/react": "workspace:latest",
+    "ramda": "0.29.0",
+    "react": "18.2.0"
+  }
+}

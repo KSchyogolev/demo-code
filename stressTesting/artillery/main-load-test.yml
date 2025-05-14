@@ -1,0 +1,44 @@
+config:
+  environments:
+    local:
+      target: "http://localhost:3000"
+    staging:
+      target: "http://web.staging.cryptology.com"
+    sandbox:
+      target: "http://sandbox.cryptology.com"
+    production:
+      target: "http://cryptology.com" # safety config for production to avoid spikes
+      phases:
+        - duration: 10
+          arrivalCount: 30 # virtual users count for all phase
+          name: Warm up phase
+        - duration: 20
+          arrivalCount: 500
+          name: Ramp up load
+  phases:
+    - duration: 10
+      arrivalCount: 30 # virtual users count for all phase
+      name: Warm up phase
+    - duration: 20
+      arrivalCount: 500
+      name: Ramp up load
+    - duration: 15
+      arrivalCount: 1000
+      name: Spike phase
+  plugins:
+    apdex: {}  # Application Performance Index
+    metrics-by-endpoint: {}
+  apdex:
+    threshold: 1500 # border response time
+scenarios:
+  - flow:
+      - loop:
+          - get:
+              url: "/"
+          - get:
+              url: "/buy-crypto"
+          - get:
+              url: "/faq"
+          - get:
+              url: "/futures"
+        count: 5

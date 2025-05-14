@@ -1,0 +1,41 @@
+config:
+  target: 'https://app.tst1.rask.ai'
+  phases:
+    - duration: 10 # load test duration
+      arrivalCount: 10 # virtual users count for all phase
+      name: Warmup phrase
+  payload:
+    path: 'credentials.csv'
+    fields:
+      - username
+      - password
+
+scenarios:
+  - flow:
+      - log: 'Auth to {{ username }}'
+      - post:
+          url: 'https://cognito-idp.us-west-2.amazonaws.com/'
+          headers:
+            Content-Type: 'application/x-amz-json-1.1'
+            X-Amz-Target: 'AWSCognitoIdentityProviderService.InitiateAuth'
+            Origin: 'https://app.tst1.rask.ai'
+            Referer: 'https://app.tst1.rask.ai/'
+          json:
+            AuthFlow: 'USER_PASSWORD_AUTH'
+            AuthParameters:
+              USERNAME: '{{ username }}'
+              PASSWORD: '{{ password }}'
+            ClientId: '7meq276cnb7adg5j29d8170oog'
+          capture:
+            - json: '$.AuthenticationResult.IdToken'
+              as: 'authToken'
+      - log: 'Received token {{ authToken }}'
+      - get:
+          url: '/api/project'
+          headers:
+            Authorization: 'Bearer {{ authToken }}'
+          qs:
+            offset: 0
+            limit: 3000
+          expect:
+            statusCode: 200
