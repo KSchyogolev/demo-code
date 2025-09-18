@@ -28,8 +28,8 @@ A comprehensive performance testing framework designed for thorough application 
 - Performance benchmarking utilities
 - Resource utilization monitoring
 
-## Proof of Concepts (POCs)
-Located in the `pocs/` directory, this section contains experimental implementations and technical validations for various ideas and approaches.
+## Proof of Concepts
+Located in the `POCs/` directory, this section contains experimental implementations and technical validations for various ideas and approaches.
 
 ---
 
