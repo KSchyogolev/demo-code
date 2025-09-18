@@ -41,6 +41,12 @@ Founding Fullstack Engineer (responsible for entire platform and architecture fr
 
 https://www.loki.build/
 
+**Architecture example:**
+- Microservices on BE with API Gateway (NodeJS, Elysia, Redis, OpenApi, Playwright, Pinecone, Bun)
+- Clear FSD on FE (React, Mobx, Vite)
+- Monorepo orchestration Yarn Workspaces
+<img width="1135" height="857" alt="Screenshot 2025-09-18 at 12 11 59" src="https://github.com/user-attachments/assets/cdad57bc-e0bc-4766-b0a6-70d27c8d28f8" />
+
 <br/>
 
 ### Rask.ai
@@ -61,7 +67,6 @@ https://app.rask.ai/
 #### AI-powered listing generator (released a year before ChatGPT launch)
 
 First Engineer and R&D Lead (responsible for entire platform, hiring and architecture from zero day)
-
 
 https://app.copymonkey.ai/
  
