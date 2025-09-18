@@ -1,6 +1,6 @@
 # Demo Projects & Professional Portfolio
 
-This repository showcases a collection of demo code, proof-of-concepts, and highlights from professional projects. It demonstrates various technical skills, architectural patterns, and innovative solutions across different domains.
+This repository showcases a collection of demo code, proof-of-concepts, and highlights from professional projects.
 
 ## 📁 Repository Structure
 
