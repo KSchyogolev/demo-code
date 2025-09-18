@@ -1,6 +1,7 @@
 # Demo Projects Collection
 
 This repository contains a collection of demo сode and projects.
+<br/>
 
 ## Code Modules 
 
@@ -28,6 +29,8 @@ A comprehensive performance testing framework that includes:
 - Performance benchmarking tools
 - Resource utilization monitoring
 
+<br/>
+<br/>
 
 ## Products I Worked On
 
