@@ -39,7 +39,7 @@ Located in the `POCs/` directory, this section contains experimental implementat
 **AI-Powered Website Builder and Remixer**
 
 *Role: Founding Fullstack Engineer*  
-*Responsibility: Complete platform architecture and development from inception*
+*Responsibility: Complete platform architecture and development from ground zero*
 
 🔗 [loki.build](https://www.loki.build/)
 
