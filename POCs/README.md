@@ -12,7 +12,7 @@ This directory contains experimental implementations and technical hypothesis va
 An intelligent fitness program creator that leverages RAG (Retrieval-Augmented Generation) to provide personalized workout recommendations based on trusted fitness expert content.
 
 [Demo](https://www.loom.com/share/466e67f5eab74ba2a3af243797808ed6)
-<img width="1135" height="857" alt="Screenshot 2025-09-18 at 12 11 59" src="https://github.com/user-attachments/assets/f94172d4-7ee8-4604-9f57-585ef6b2ea55" />
+<img width="1482" height="781" alt="Screenshot 2025-09-18 at 15 42 21" src="https://github.com/user-attachments/assets/526349ed-448c-49ff-bde5-7b385e398c02" />
 
 
 ### Implementation Flow:
