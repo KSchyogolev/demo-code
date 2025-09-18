@@ -2,11 +2,9 @@
 
 This repository showcases a collection of demo code, proof-of-concepts, and highlights from professional projects.
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
-## Code Modules
-
-### MobX Service
+## MobX Service
 A custom MobX implementation featuring a robust subscription system for state management. This module provides:
 
 **Core Features:**
@@ -23,7 +21,7 @@ A custom MobX implementation featuring a robust subscription system for state ma
 - Configurable unsubscribe behavior
 - Client-side state rehydration mechanisms
 
-### Stress Testing Suite
+## Stress Testing Suite
 A comprehensive performance testing framework designed for thorough application analysis:
 
 - Artillery-based load testing capabilities
@@ -32,7 +30,7 @@ A comprehensive performance testing framework designed for thorough application 
 - Performance benchmarking utilities
 - Resource utilization monitoring
 
-### Proof of Concepts (POCs)
+## Proof of Concepts (POCs)
 Located in the `pocs/` directory, this section contains experimental implementations and technical validations for various ideas and approaches.
 
 ---
