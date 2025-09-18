@@ -49,10 +49,9 @@ Located in the `pocs/` directory, this section contains experimental implementat
 
 **Technical Architecture:**
 - **Backend:** Microservices architecture with API Gateway
-- **Technologies:** Node.js, Elysia, Redis, OpenAPI, Playwright, Pinecone, Bun
 - **Frontend:** Feature-Sliced Design (FSD) methodology
-- **Stack:** React, MobX, Vite
-- **Infrastructure:** Monorepo orchestration with Yarn Workspaces
+- **Technologies:** Node.js, Elysia, Redis, OpenAPI, Playwright, Pinecone, Bun, React, MobX, Vite
+- **Infrastructure:** Monorepo orchestration with Yarn Workspaces, Docker, AWS
 
 <img width="1135" height="857" alt="LokiApp Architecture Screenshot" src="https://github.com/user-attachments/assets/cdad57bc-e0bc-4766-b0a6-70d27c8d28f8" />
 
