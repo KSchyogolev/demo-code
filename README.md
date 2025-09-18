@@ -2,8 +2,6 @@
 
 This repository showcases a collection of demo code, proof-of-concepts, and highlights from professional projects.
 
-## 📁 Repository Structure
-
 ## MobX Service
 A custom MobX implementation featuring a robust subscription system for state management. This module provides:
 
