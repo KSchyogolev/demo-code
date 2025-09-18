@@ -48,6 +48,9 @@ An intelligent fitness program creator that leverages RAG (Retrieval-Augmented G
 
 An AI-powered system that understands natural language queries and converts them into structured marketplace searches, providing users with relevant product recommendations.
 
+[Demo](https://www.loom.com/share/18b3b204280c4875894912f949cd70fd)
+<img width="1511" height="855" alt="Screenshot 2025-09-18 at 15 48 47" src="https://github.com/user-attachments/assets/f623c9be-edee-4527-9e56-ed7ae14da550" />
+
 ### Implementation Flow:
 
 1. **Integration Setup**
